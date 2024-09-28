@@ -1,0 +1,19 @@
+body {
+    background-color: #343a40;
+    color: white;
+}
+
+#currentTicket .card,
+#historyPanel .card {
+    height: 100%;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        color: red;
+    }
+}

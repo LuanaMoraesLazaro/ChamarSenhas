@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Operador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/operador.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        
+        <h1 class="text-center">Painel do Operador</h1>
+        <hr>
+
+        <div class="mb-4">
+            <label for="ticketInput" class="form-label">Senha</label>
+            <input type="text" id="ticketInput" class="form-control" placeholder="Digite a próxima senha">
+        </div>
+
+        <div class="mb-4">
+            <label for="guicheSelect" class="form-label">Guichê</label>
+            <select id="guicheSelect" class="form-select">
+                <option value="1">Guichê 01</option>
+                <option value="2">Guichê 02</option>
+                <option value="3">Guichê 03</option>
+                <option value="4">Guichê 04</option>
+                <option value="5">Guichê 05</option>
+            </select>
+        </div>
+
+        <div class="button-container mb-4">
+            <button id="callNext" class="btn btn-primary">Chamar Próxima Senha</button>
+            <button id="clearLast" class="btn btn-warning">Limpar Última Senha</button>
+            <button id="viewHistory" class="btn btn-info">Ver Histórico</button>
+            <button id="clearHistory" class="btn btn-danger">Limpar Histórico</button>
+        </div>
+
+        <div class="card bg-secondary">
+            <div class="card-body">
+                <h5 class="card-title">Histórico de Chamadas</h5>
+                <ul id="historyList" class="list-group list-group-flush">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/operador.js"></script>
+
+</body>
+
+</html>
